@@ -29,25 +29,25 @@ let o = m +n
 // console.log(3+2+"1")       // 51    //here it adds first and then add to that string
 
 // *****************comparasion********************
-console.log(a<b)        // true
-console.log(a<=b)       // true
-console.log(a>b)        // false
-console.log(a>=b)       // false
-console.log(a==b)       // false
-console.log(a!=b)       // true
+// console.log(a<b)        // true
+// console.log(a<=b)       // true
+// console.log(a>b)        // false
+// console.log(a>=b)       // false
+// console.log(a==b)       // false
+// console.log(a!=b)       // true
 
 // here sometime typeconversion takes place and conversion happens between two different datatypes
 console.log("2" >1)     // true
 console.log("2" <1)     // false
 // but its is not a good practice of comparing two different datatype
 
-console.log(null== 0)    // false
-console.log(null<= 0)    // true
-console.log(null>= 0)    // true
+// console.log(null== 0)    // false
+// console.log(null<= 0)    // true
+// console.log(null>= 0)    // true
 
-// strict check ===
-console.log("2"== 2)     // true
-console.log("2"=== 2)    // false
+// // strict check ===
+// console.log("2"== 2)     // true
+// console.log("2"=== 2)    // false
 
 // there are only two types of datatypes :primitive and non primitive
 // primitive are 7 types : they are called by value:numbers, string , null , undefined, boolean , symbol, bigint
@@ -63,3 +63,6 @@ const myfunc = function(){
     console.log("hello");
 }
 
+console.log(typeof arr)         // object
+console.log(typeof myfunc)      // function
+console.log(typeof myobj)       // object
