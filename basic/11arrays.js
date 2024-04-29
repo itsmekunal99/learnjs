@@ -1,11 +1,15 @@
 // arrays
 // collection of multiple items stored in a variable 
 // arrays in js are resizable
+// arrays can contain diffrent types of elemnts
 // they can be accesed only using index
 // array copy operation makes shallow copies ie points to memory in heap doesnt make copy
 
 const arr= [2 , 5 ,6 ,3 , 9]
 const secarr= ["hero" , "villian" , "herione"]
+
+// arrays can also be declared as 
+const diffarray = new Array(2 , 4 , 6 , 8)
 
 console.log(typeof arr)    // prints object 
 // hense it also have different prototypes which can be accesed using different methods
@@ -32,6 +36,7 @@ console.log(secarr.indexOf("hero"))         // prints the index ie 1
 const newarr = arr.join()
 // binds the array elements but also convert them into string
 console.log(newarr)
+console.log( typeof newarr)
 
 // slice and splice
 const arr0 = [0 , 1 , 2 , 3 , 4 , 5 , 6] 
@@ -47,7 +52,7 @@ console.log("arr 2            :" , arr2)
 console.log("after slice arr0 :" , arr0)     // alters the original array
 
 
-console.log("=============part 2 ========")
+console.log("=============part 2 =========== =")
 // concatenation
 const car = ['hyundai' , 'kia' , 'MG' , 'suzuki']
 const bike = ['KTM' , 'hero' , 'bajaj' , 'honda']

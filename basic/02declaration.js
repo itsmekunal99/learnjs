@@ -9,7 +9,7 @@ console.log(place);
 
 console.table([idno , Pname , desig , place])
 
-// idno=456   // cant be changed
+// idno=456   // cant be changed  since it is a const
 // others can be changes 
 Pname = "harsh";
 desig="manager";
