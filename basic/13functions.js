@@ -50,3 +50,72 @@ console.log(pro)
 
 // or console.log(Product(3,5))
 
+// some funtions have default arguments also
+// if we dont pass any argument it can take that value
+// eg
+function wish(urname = "harry"){
+    return `hello ${urname},how are you `
+}
+
+console.log(wish("ram"))
+console.log(wish())
+
+// but sometimes if there is no default parameter in the defining part of the function and 
+// if we dont pass any value then it takes it as undefined
+
+// so to avoid such condition we try to implement if else in the function
+ function welc(pname){
+    // if(!undefined)
+    // if(!pname){    //or                 // this is other way of writing which says pname is not defined
+    if(pname=== undefined){
+        console.log("enter ur name")
+        return
+    }
+    console.log(`hi ${pname}, welcome to js`)
+ }
+
+welc("Ravi")
+welc()
+
+// =================================================================
+// rest and spread operator use case
+// sometimes we need to add more than one values in an argument , so instead of writing it again and again we just use rest operator
+// eg 
+function cartvalue(...val){
+    return val
+}
+
+console.log(cartvalue(334 , 560 , 470))  // prints [ 334, 560, 470 ]
+// ie gives the value in the form of an array of all values 
+
+// we can pass any object in a funtion too
+
+// we declare a object 
+const item1={
+    item :"Pillow",
+    price :299
+}
+
+// now declaring the function
+function pricecall(obj){
+    console.log(`price of ${obj.item} is ${obj.price}`)
+}
+
+// we can pass here an object by two ways 
+// any preexisting object or just making an object inside the argument value
+pricecall(item1)
+// or
+pricecall({
+    item:"bedsheet",
+    price:499
+})
+
+// similarly we can pass an array inside a function
+// function which returns 3rd element of the array
+arr1 =[56, 78 , 54 , 90,32]
+
+function arrret(arr){
+    return arr[2]
+}
+
+console.log(arrret(arr1))
