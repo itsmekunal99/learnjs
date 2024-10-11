@@ -17,7 +17,7 @@ console.log( "pqr" + "abc")     // string with string concatenation
 str1 = "hello"
 str2 = " world"
 str3 = str1 +str2
-console.log(str3)
+console.log(str3)            // prints hello world 
 
 console.log('1'+'2')             // here all will be treated as string
 console.log(1+'2')               // 12

@@ -12,7 +12,7 @@ console.log(newscr);            // 56
 
 score = "56vg"
 newscr = Number(score);
-console.log( typeof newscr);    // number
+console.log(typeof newscr);    // number
 console.log(newscr);            // NaN
 
 // similarly other conversions are 

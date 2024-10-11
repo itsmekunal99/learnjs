@@ -6,8 +6,13 @@ const score = 56
 // here we use backticks and make placehoders for any variable  ==> it is more convinient
 console.log(`username ${username} has a score of ${score}`) 
 
-// there is one more way of defining a string ie by object
 console.log( typeof username)           // prints string
+console.log(username.length) 
+console.log(username.toUpperCase())     
+console.log(username.charAt(6))         
+console.log(username.indexOf('w')) 
+
+// there is one more way of defining a string ie by object
 let thisstr = new String('newstring')
 console.log( typeof thisstr)           // prints object
 

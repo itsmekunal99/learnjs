@@ -14,6 +14,8 @@ console.log( typeof balance)  // prints object
 // note: the methods will be differrent here 
 
 console.log(balance.toString().length)
+console.log(score.toString().length)
+
 console.log(balance.toFixed(2))        // prints decimal value upto 2 points
 
 const subs = 13989202
@@ -44,6 +46,7 @@ const min = 20
 const max = 40
 
 console.log(Math.floor(Math.random() * (max-min) + min))
+console.log(Math.round(Math.random() * (max-min) + min))
 // here we use multiple methods in a nested manner
 
 
